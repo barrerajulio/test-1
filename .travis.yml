@@ -1,0 +1,34 @@
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: s3
+  access_key_id: "${AWS_ACCESS_KEY}"
+  secret_access_key: "${AWS_SECRET_ACCESS_KEY}"
+  bucket: "cuidamimascotatest"
+  detect_encoding: true
+  skip_cleanup: true
+  acl: public_read
+  local_dir: ./public
+  on:
+    branch: development
+after_deploy: "echo 'ready :)'"
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+sudo: required
+notifications:
+  email: false
+node_js:
+  - '10'
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  only:
+    - development
+before_install:
+  - bash ./.git-deploy/setup.sh
+  # except:
+  #  - /^v\d+\.\d+\.\d+$/
+before_script:
+  - npm install
+# script:
