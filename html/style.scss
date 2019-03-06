@@ -1,0 +1,50 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import "scss/variables";
+
+body {
+    font-family: $font-family;
+    text-align: center;
+    font-size: $font-size;
+    header, aside, footer {
+        padding: $font-size * 1.5;
+        box-sizing: border-box;
+        color: $white-color;
+    }
+    header {
+        background-color: $danger-color;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        aside {
+            flex: 0 0 100%;
+            background-color: $purple-color;
+        }
+        main {
+            flex: 0 0 100%;
+        }
+    }
+    footer {
+        background-color: $highlight-color;
+    }
+}
+
+@media only screen and (min-width: $md-size){
+    body {
+        font-size: $font-size * 0.4666666667;
+        header, aside, footer {
+            padding: $font-size * 0.5;
+        }
+        .content {
+            aside {
+                flex: 0 0 20%;
+                background-color: $purple-color;
+                color: $white-color;
+            }
+            main {
+                flex: 0 0 80%;
+            }
+        }
+    }
+}
