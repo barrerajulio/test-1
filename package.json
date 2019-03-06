@@ -8,6 +8,7 @@
     "react-scripts": "^2.1.5"
   },
   "scripts": {
+    "commit": "npx git-cz",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -18,5 +19,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.7",
+    "cz-conventional-changelog": "^2.1.0",
+    "git-cz": "^1.8.4"
+  }
 }
