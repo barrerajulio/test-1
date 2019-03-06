@@ -1,0 +1,32 @@
+{
+  "check-coverage": true,
+  "statements": 94.89,
+  "lines": 94,
+  "functions": 83.27,
+  "branches": 78.16,
+  "watermarks": {
+    "statements": [60, 95],
+    "lines": [60, 95],
+    "functions": [60, 95],
+    "branches": [60, 95]
+  },
+  "cache": true,
+  "extension": [
+    ".ts"
+  ],
+  "include": [
+    "src/array.helper.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ],
+  "require": [
+    "ts-node/register"
+  ],
+  "reporter": [
+    "html",
+    "lcov",
+    "text-summary"
+  ],
+  "all": true
+}
