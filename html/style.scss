@@ -24,16 +24,32 @@ body {
         main {
             box-sizing: border-box;
             flex: 0 0 100%;
-            flex-direction: column;
             background-color: $blue-color;
-            padding: 10px;
+            padding: 0.333 * $font-size;
+            display: grid;
+            grid-template-areas:
+                'item2 item1 item1'
+                'item2 item3 item4'
+                'item5 item5 item4';
+            grid-gap: 0.333 * $font-size;
             .item {
-                padding: $font-size * 1.5;
-                display: flex;
-                margin: 10px;
+                box-sizing: border-box;
+                padding: $font-size * 1.5 0 ;
                 background-color: $blue-light-color;
                 &.item-1 {
-                    // flex: 0 0 80%;
+                    grid-area: item1;
+                }
+                &.item-2 {
+                    grid-area: item2;
+                }
+                &.item-3 {
+                    grid-area: item3;
+                }
+                &.item-4 {
+                    grid-area: item4;
+                }
+                &.item-5 {
+                    grid-area: item5;
                 }
             }
         }
@@ -57,9 +73,13 @@ body {
             }
             main {
                 flex: 0 0 80%;
+                grid-template-areas:
+                'item1 item1 item4'
+                'item2 item3 item4'
+                'item2 item5 item5';
+                grid-gap: 0.3571428571em;
                 .item {
-                    margin: 5px;
-                    padding: $font-size * 0.5;
+                    padding: $font-size * 0.5 0;
                 }
             }
         }
