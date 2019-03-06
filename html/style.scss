@@ -22,7 +22,20 @@ body {
             background-color: $purple-color;
         }
         main {
+            box-sizing: border-box;
             flex: 0 0 100%;
+            flex-direction: column;
+            background-color: $blue-color;
+            padding: 10px;
+            .item {
+                padding: $font-size * 1.5;
+                display: flex;
+                margin: 10px;
+                background-color: $blue-light-color;
+                &.item-1 {
+                    // flex: 0 0 80%;
+                }
+            }
         }
     }
     footer {
@@ -44,6 +57,10 @@ body {
             }
             main {
                 flex: 0 0 80%;
+                .item {
+                    margin: 5px;
+                    padding: $font-size * 0.5;
+                }
             }
         }
     }
