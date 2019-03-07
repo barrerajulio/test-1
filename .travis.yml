@@ -7,7 +7,7 @@ deploy:
   detect_encoding: true
   skip_cleanup: true
   acl: public_read
-  local_dir: ./public
+  local_dir: ./build
   on:
     branch: development
 after_deploy: "echo 'ready :)'"
@@ -31,4 +31,5 @@ before_install:
   #  - /^v\d+\.\d+\.\d+$/
 before_script:
   - npm install
-# script:
+script:
+  - npm run build
