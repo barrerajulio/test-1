@@ -1,19 +1,35 @@
 import { Control, Errors, Form } from 'react-redux-form'
-import React, { Component } from 'react';
+import React, { Component, Props } from 'react';
 
-interface IRecordRegister {
-  country: string;
-  name: string;
-  phone: string;
-  email: string;
-}
+import { IRecordRegister } from '../interfaces/record.register';
 
 /**
  * @export
  */
 class FormRegisterComponent extends Component {
+  static propTypes: {};
+
+  /**
+   * Creates an instance of FormRegisterComponent.
+   * @memberof FormRegisterComponent
+   */
+  public constructor(props: Props<any>) {
+    super(props)
+  }
+
+  /**
+   * @memberof FormRegisterComponent
+   */
   public onSubmit(v: IRecordRegister): void {
-    console.log(v);
+    (this.props as any).onCreate(v);
+    this.setState({
+      register: {
+        formRegister: {
+          country: '',
+          email: ''
+        }
+      }
+    });
   }
 
   /**
@@ -23,7 +39,7 @@ class FormRegisterComponent extends Component {
   public render(): React.ReactNode {
     return (
       <div className="container-form">
-        <Form model="formRegister" onSubmit={v => this.onSubmit(v)}>
+        <Form model="register.formRegister" onSubmit={v => this.onSubmit(v)}>
           <div className="form-group row">
             <label htmlFor="country" className="col-12 col-form-label">Seleccione País:</label>
             <div className="col-12">

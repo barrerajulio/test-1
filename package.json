@@ -5,7 +5,12 @@
   "dependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "^2.1.5"
+    "react-redux": "^6.0.1",
+    "react-redux-form": "^1.16.12",
+    "react-scripts": "^2.1.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "commit": "npx git-cz",
@@ -33,15 +38,12 @@
     "@types/react": "^16.8.6",
     "@types/react-dom": "^16.8.2",
     "@types/react-redux": "^7.0.2",
+    "@types/redux-logger": "^3.0.7",
     "bootstrap": "^4.3.1",
     "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
     "git-cz": "^1.8.4",
     "node-sass": "^4.11.0",
-    "react-redux": "^6.0.1",
-    "react-redux-form": "^1.16.12",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
     "semantic-release": "^15.13.3",
     "travis-deploy-once": "^5.0.11",
     "typescript": "^3.3.3333"

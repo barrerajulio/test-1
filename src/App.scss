@@ -1,1 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    .list-rows {
+        .list-item {
+            border: $font-size-base * 0.125 solid $yellow;
+            padding: $font-size-base * 0.625;
+            margin-bottom: $font-size-base * 0.625;
+            h5 {
+                font-size: $font-size-base * 1.25;
+                border-bottom: $font-size-base * 0.0625 solid $blue;
+            }
+        }
+    }
+}
