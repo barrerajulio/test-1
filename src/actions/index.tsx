@@ -8,20 +8,8 @@ export const addRegister = (register: IRecordRegister) => ({type: ADD_REGISTER, 
 export const requestRegisters = () => ({type: REQUEST_REGISTERS, requestedAt: new Date()})
 export const retrievedRegisters = () => ({type: RETRIEVE_REGISTERS, retrievedAt: new Date()})
 export const fetchRegisters = () => async (dispatch: any) => {
-    const response: IRecordRegister[] = [
-        {
-          country: 'México',
-          name: 'Chuck',
-          phone: '11576894838',
-          email: 'chuck@email.com'
-        },
-        {
-          country: 'Argentina',
-          name: 'Marta',
-          phone: '23234234234',
-          email: 'marta@email.com'
-        }
-    ];      
+    const request = await fetch('/person.json')
+    const response: IRecordRegister[] = await request.json();
     dispatch(requestRegisters());
     response.forEach((item) => dispatch(addRegister(item)));
     dispatch(retrievedRegisters());
