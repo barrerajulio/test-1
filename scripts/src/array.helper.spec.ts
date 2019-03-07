@@ -41,4 +41,25 @@ describe ('ArrayHelper', () => {
             assert.isTrue(timeEllapsedSetFn <= timeEllapsedForEachFn);
         })
     });
+
+    /**
+     * [ x ] Dada una serie encontrar los números consecutivos que coincidan con el valor esperado
+     */
+    describe ('busqueda de secuencia más larga', () => {
+        it ('Encuentra la secuencia numerica más larga', () => {
+            assert.deepStrictEqual(
+                subject.largestSequence(1, 2, 5, 3, 7, 8, 9),
+                [7, 8, 9]
+            );
+            assert.deepStrictEqual(
+                subject.largestSequence(6, 8, 9, 3, 4, 5),
+                [3, 4, 5]
+            );
+            benchHelper.bench(
+                subject.largestSequence,
+                100, [1, 3, 2, 3, 4, 5, 6, 3, 6, 7, 8, 9, 10, 11, 1],
+                subject
+            );
+        });
+    });
 });
