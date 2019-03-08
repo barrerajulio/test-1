@@ -1,3 +1,36 @@
+## Como usar
+
+### Ejercicio de grid HTML
+En la carpeta html, esta aislado como un proyecto individual,
+Es necesario ejecutar los comandos
+npm install
+npm run build
+
+### Ejercicio scripts benchmark
+En la carpeta scripts, estan alojados los dos códigos para obtener valores únicos y las secuencias más largas.
+
+Dichos scripts van acompañados de pruebas unitarias, documentación generada con jsdoc, coverage con nyc de istanbul,
+la configuración para vscode para poder depurar, para ejecutarlos debe ingresar a la carpeta scripts y seguir los pasos
+
+1. npm install
+2. npm run build
+
+El paso 2 ejecutar pruebas de calidad de código, pruebas unitarias, generara documentación y finalmente transpilara el contenido.
+
+### Proyecto react
+Debo hacer enfásis que react no es mi fuerte, pero no tuve mucho problema con la estructura manejada, de hecho me ha encantado y seguro
+que me haré espacio para estudiarlo. Mi fuerte es angular, el cual conozco desde la beta 17, hasta la versión 7 actual.
+
+El proyecto react, tiene integración y despligue continuo (devops), el cual esta integrado a través de travis. Me gustaría para estos casos
+añadirlos a la fuente para que vean los pasos que se ejecutaron en la integración,
+
+Así mismo el proyecto principal mantiene un CHANGELOG que se obtiene a partir de semantic-release.
+
+La liga donde se genera el deploy de este proyecto es: [http://cuidamimascotatest.s3-website-us-east-1.amazonaws.com/](http://cuidamimascotatest.s3-website-us-east-1.amazonaws.com/)
+
+Me hubiese gustado demostrar conocimientos con otras herramientas, pero por tiempo me fue imposible.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
