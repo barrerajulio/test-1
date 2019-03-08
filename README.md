@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/barrerajulio/test-1.svg?token=W8V7zXRyNJrbBYCZB8rE&branch=development)](https://travis-ci.org/barrerajulio/test-1)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/barrerajulio/test-1/releases/)
+[![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/barrerajulio/test-1/commit/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 ## Como usar
 
 ### Ejercicio de grid HTML
