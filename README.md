@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/barrerajulio/test-1.svg?token=W8V7zXRyNJrbBYCZB8rE&branch=development)](https://travis-ci.org/barrerajulio/test-1)
+[![Build Status](https://travis-ci.org/barrerajulio/test-1.svg?branch=master)](https://travis-ci.org/barrerajulio/test-1)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/barrerajulio/test-1/releases/)
